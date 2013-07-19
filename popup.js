@@ -1,3 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  alert "Call Me Easy Is Loaded!"
+  var num = $("#number");
+  alert("Call Me Easy Is Loaded!" + num);
 });
