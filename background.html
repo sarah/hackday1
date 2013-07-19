@@ -1,0 +1,10 @@
+<script src="jquery.js">
+<script type="text/javascript">
+  function testRequest() {        
+     console.log("HellO");
+     chrome.tabs.getSelected(null, function(tab) {
+        chrome.tabs.sendMesage(tab.id, {greeting: "hello"});
+    });   
+  }
+</script>
+

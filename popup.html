@@ -17,16 +17,13 @@
       }
     </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1 id="number">Hello</h1>
+    <h1 id="number">Extension</h1>
+    <form>
+            <input type="button" value="sendMessage" onclick="chrome.extension.getBackgroundPage().testRequest()" />
+        </form>
   </body>
 </html>
 
