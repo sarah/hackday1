@@ -4,6 +4,12 @@
   "name": "Call Me Easy",
   "description": "One-click calling for Trunk Club customers",
   "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery.js", "call.js"]
+    }
+  ],
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
