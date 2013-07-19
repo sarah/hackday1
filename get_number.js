@@ -2,7 +2,7 @@ $(function() {
 
   var content = $("#bar").text();
   function getNumber(){
-    return $("#bar").text();
+    return $("#acc10_ileinner").text();
   }
   console.log("getNumber " + getNumber());
 
