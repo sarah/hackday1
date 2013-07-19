@@ -15,5 +15,6 @@
   ],
   "permissions": [
      "tabs"
-  ]
+     ],
+  "content_security_policy": "script-src 'self' https://s.phono.com; object-src 'self'" 
 }
